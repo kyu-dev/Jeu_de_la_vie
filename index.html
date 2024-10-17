@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de la Vie</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        #controls {
+            position: absolute;
+            top: 10px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="controls">
+        <button id="startButton">Démarrer</button>
+        <button id="stopButton">Arrêter</button>
+        <button id="clearButton">Effacer</button>
+        <button id="randomButton">Aléatoire</button>
+        
+         <label for="speedRange">Vitesse : <span id="speedDisplay">100</span> ms</label>
+         <input id="speed" type="range" min="10" max="100000" value="100">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
